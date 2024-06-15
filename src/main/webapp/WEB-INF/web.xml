@@ -1,0 +1,69 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<web-app xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns="http://xmlns.jcp.org/xml/ns/javaee" xsi:schemaLocation="http://xmlns.jcp.org/xml/ns/javaee http://xmlns.jcp.org/xml/ns/javaee/web-app_4_0.xsd" id="WebApp_ID" version="4.0">
+  <display-name>Bit</display-name>
+  
+  <servlet>
+  <servlet-name>Insert</servlet-name>
+  <servlet-class>item.Additemservlet</servlet-class>
+  </servlet>
+  <servlet-mapping>
+  <servlet-name>Insert</servlet-name>
+  <url-pattern>/insert</url-pattern>
+  </servlet-mapping>
+  
+  
+   <servlet>
+  <servlet-name>View</servlet-name>
+  <servlet-class>item.viewservlet</servlet-class>
+  </servlet>
+  <servlet-mapping>
+  <servlet-name>View</servlet-name>
+  <url-pattern>/view</url-pattern>
+  </servlet-mapping>
+  
+  
+     <servlet>
+  <servlet-name>Search</servlet-name>
+  <servlet-class>item.searchservlet</servlet-class>
+  </servlet>
+  <servlet-mapping>
+  <servlet-name>Search</servlet-name>
+  <url-pattern>/search</url-pattern>
+  </servlet-mapping>
+  
+      <servlet>
+  <servlet-name>Update</servlet-name>
+  <servlet-class>item.updateservlet</servlet-class>
+  </servlet>
+  <servlet-mapping>
+  <servlet-name>Update</servlet-name>
+  <url-pattern>/update</url-pattern>
+  </servlet-mapping>
+  
+    <servlet>
+  <servlet-name>Delete</servlet-name>
+  <servlet-class>item.deleteservlet</servlet-class>
+  </servlet>
+  <servlet-mapping>
+  <servlet-name>Delete</servlet-name>
+  <url-pattern>/delete</url-pattern>
+  </servlet-mapping>
+  
+      <servlet>
+  <servlet-name>Cart</servlet-name>
+  <servlet-class>item.cartservlet</servlet-class>
+  </servlet>
+  <servlet-mapping>
+  <servlet-name>Cart</servlet-name>
+  <url-pattern>/cart</url-pattern>
+  </servlet-mapping>
+      <servlet>
+  <servlet-name>List</servlet-name>
+  <servlet-class>item.cartviewservlet</servlet-class>
+  </servlet>
+  <servlet-mapping>
+  <servlet-name>List</servlet-name>
+  <url-pattern>/list</url-pattern>
+  </servlet-mapping>
+  
+</web-app>
